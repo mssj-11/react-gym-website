@@ -24,7 +24,7 @@ const nav_links = [
 
 
 const Header = () => {
-  return <header>
+  return <header className='header'>
     <div className='container'>
         <div className='nav_wrapper'>
             {/* LOGO */}
