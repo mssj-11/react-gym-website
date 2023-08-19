@@ -2,6 +2,27 @@ import React from 'react';
 import '../../styles/header.css';
 import logo from '../../assets/img/dumble.png';
 
+
+const nav_links = [
+    {
+        path: '#',
+        display: 'Home'
+    },
+    {
+        path: '#',
+        display: 'Schedule'
+    },
+    {
+        path: '#',
+        display: 'Classes'
+    },
+    {
+        path: '#',
+        display: 'Pricing'
+    },
+];
+
+
 const Header = () => {
   return <header>
     <div className='container'>
@@ -13,10 +34,23 @@ const Header = () => {
                 </div>
                 <h2>FiFi</h2>
             </div>
-            {/* MENU */}
+            {/* === MENU  === */}
             <div className='navigation'>
-                ul.menu
+                <ul className='menu'>
+                    {
+                        nav_links.map(item => (
+                            <li className='nav_item'><a href={item.path}>{item.display}</a></li>
+                        ))
+                    }
+                </ul>
             </div>
+            {/* === NAV RIGHT  === */}
+            <div className='nav_right'>
+                <button className='register_btn' type="submit">Register</button>
+                <span className='mobile_menu'><i className='ri-menu-line'></i></span>
+            </div>
+
+
         </div>
     </div>
   </header>
