@@ -43,13 +43,13 @@
     border-radius: 5px;
 }
 
+
 .exercise_icon img{
     width: 100%;
 }
 
 .exercises_container{
     width: 90%;
-    margin-block-end: 100px;
 }
 
 .exercises_container h4{
