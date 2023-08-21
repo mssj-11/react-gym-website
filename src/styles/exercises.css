@@ -1,0 +1,66 @@
+/*   Exercises   */
+.exercise_top{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.exercise_top h2{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.exercise_top p{
+    color: var(--heading-color);
+    font-size: 1rem;
+    line-height: 28px;
+}
+
+.exercise_wrapper{
+    display: flex;
+    background: var(--bg-gradient);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .5rem;
+    padding: 80px 60px;
+}
+
+.exercise_item{
+    display: flex;
+    width: 33%;
+    align-items: center;
+    column-gap: 1.2rem;
+}
+
+.exercise_icon{
+    display: flex;
+    width: 20%;
+    height: 20%;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.exercise_icon img{
+    width: 100%;
+}
+
+.exercises_container{
+    width: 80%;
+}
+
+.exercises_container h4{
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: .6rem;
+}
+
+.exercises_container p{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, .801);
+}
+
+
+
