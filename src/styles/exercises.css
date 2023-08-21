@@ -9,9 +9,10 @@
     margin-bottom: 1rem;
 }
 
-.exercise_top p{
-    color: var(--heading-color);
+.exercise_top .p{
+    margin-top: 2.5%;
     font-size: 1rem;
+    color: var(--heading-color);
     line-height: 28px;
 }
 
@@ -47,7 +48,8 @@
 }
 
 .exercises_container{
-    width: 80%;
+    width: 90%;
+    margin-block-end: 100px;
 }
 
 .exercises_container h4{
@@ -61,6 +63,3 @@
     font-size: 1rem;
     color: rgba(255, 255, 255, .801);
 }
-
-
-

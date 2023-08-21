@@ -10,8 +10,8 @@ const Exercises = () => {
     <section>
         <div className='container exercises_container'>
             <div className='exercise_top'>
-                <h2 className='section_title'><span className='highlights'>Exercise</span></h2>
-                <p>
+                <h2 className='section_title'>Benefits of <span className='highlights'>Exercise</span></h2>
+                <p className='p'>
                     The Lorem Ipsum pasta first appeared in a type specimen <br/> book in the 1500s as a placeholder text.
                 </p>
             </div>
@@ -52,7 +52,7 @@ const Exercises = () => {
                     </span>
 
                     <div className='exercise_content'>
-                        <h4>Reducing Blood Pressur</h4>
+                        <h4>Reducing Blood Pressure</h4>
                         <p>
                             The Lorem Ipsum pasta first appeared in a type specimen <br/> book in the 1500s as a placeholder text.
                         </p>
@@ -65,5 +65,6 @@ const Exercises = () => {
     </section>
   );
 }
+
 
 export default Exercises
