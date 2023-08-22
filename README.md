@@ -8,6 +8,11 @@
 npm install remixicon --save
 ```
 
+#   Install swiper [component](https://codesandbox.io/s/y6dn3i?file=/src/App.jsx)
+```sh
+npm i swiper
+```
+
 
 # Getting Started with Create React App
 
