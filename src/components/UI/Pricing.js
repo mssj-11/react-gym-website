@@ -4,7 +4,7 @@ import '../../styles/pricing.css';
 
 const Pricing = () => {
   return (
-    <section>
+    <section id='pricing'>
         {/* --- Pricing Section --- */}
         <div className='container'>
             <div className='pricing_top'>
