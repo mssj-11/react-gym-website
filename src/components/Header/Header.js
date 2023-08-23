@@ -32,7 +32,7 @@ const Header = () => {
                 <div className='logo_img'>
                     <img src={logo} alt='' />
                 </div>
-                <h2>FiFi</h2>
+                <h2>Fussion<span className='highlights'> Fit</span></h2>
             </div>
             {/* === MENU  === */}
             <div className='navigation'>
