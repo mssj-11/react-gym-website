@@ -5,6 +5,7 @@ import Exercises from './components/UI/Exercises';
 import Start from './components/UI/Start';
 import Pricing from './components/UI/Pricing';
 import Testimonials from './components/UI/Testimonials';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Start />
       <Pricing />
       <Testimonials />
+      <Footer />
     </>
   );
 }
