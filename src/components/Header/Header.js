@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import '../../styles/header.css';
 import logo from '../../assets/img/dumble.png';
 
@@ -9,22 +9,38 @@ const nav_links = [
         display: 'Home'
     },
     {
-        path: '#',
+        path: '#schedule',
         display: 'Schedule'
     },
     {
-        path: '#',
+        path: '#classes',
         display: 'Classes'
     },
     {
-        path: '#',
+        path: '#pricing',
         display: 'Pricing'
     },
 ];
 
 
 const Header = () => {
-  return <header className='header'>
+
+    const headerRef = useRef(null);
+    const headerFunc = () => {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+            headerRef.current.classList.add('sticky_header');
+        }else{
+            headerRef.current.classList.remove('sticky_header');
+        }
+    }
+
+    useEffect(()=> {
+        window.addEventListener("scroll", headerFunc)
+        return ()=> window.removeEventListener('scroll', headerFunc);
+    }, [])
+
+
+  return <header className='header' ref={headerRef}>
     <div className='container'>
         <div className='nav_wrapper'>
             {/* LOGO */}
