@@ -7,7 +7,7 @@ import extended from '../../assets/img/extended.png';
 
 const Exercises = () => {
   return (
-    <section>
+    <section id='schedule'>
         <div className='container exercises_container'>
             <div className='exercise_top'>
                 <h2 className='section_title'>Benefits of <span className='highlights'>Exercise</span></h2>
