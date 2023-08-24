@@ -7,7 +7,7 @@ import '../../styles/hero.css';
 
 const Hero = () => {
   return (
-  <section>
+  <section id='home'>
     <div className='container'>
         <div className='hero_wrapper'>
             {/* ====   Hero content    ==== */}
