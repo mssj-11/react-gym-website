@@ -5,7 +5,7 @@ import logo from '../../assets/img/dumble.png';
 
 const nav_links = [
     {
-        path: '#',
+        path: '#home',
         display: 'Home'
     },
     {
@@ -37,7 +37,20 @@ const Header = () => {
     useEffect(()=> {
         window.addEventListener("scroll", headerFunc)
         return ()=> window.removeEventListener('scroll', headerFunc);
-    }, [])
+    }, []);
+
+    const handleClick = e => {
+        e.preventDefault();
+
+        const targetAttr = e.target.getAttribute('href');
+        const location = document.querySelector(targetAttr).offsetTop;
+
+        window.scrollTo({
+            left: 0,
+            top: location - 80,
+        })
+    }
+
 
 
   return <header className='header' ref={headerRef}>
@@ -46,7 +59,7 @@ const Header = () => {
             {/* LOGO */}
             <div className='logo'>
                 <div className='logo_img'>
-                    <img src={logo} alt='' />
+                    <img src={logo} alt='logo' />
                 </div>
                 <h2>Fussion<span className='highlights'> Fit</span></h2>
             </div>
@@ -55,7 +68,7 @@ const Header = () => {
                 <ul className='menu'>
                     {
                         nav_links.map(item => (
-                            <li className='nav_item'><a href={item.path}>{item.display}</a></li>
+                            <li className='nav_item'><a onClick={handleClick} href={item.path}>{item.display}</a></li>
                         ))
                     }
                 </ul>
@@ -71,5 +84,6 @@ const Header = () => {
     </div>
   </header>
 }
+
 
 export default Header
