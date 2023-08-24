@@ -13,6 +13,12 @@ npm install remixicon --save
 npm i swiper
 ```
 
+#   Install AOS Scroll Animation
+```sh
+npm i aos
+```
+
+
 
 # Getting Started with Create React App
 

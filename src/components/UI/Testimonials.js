@@ -18,7 +18,7 @@ export default function Testimonials() {
         <div className="container sliders">
             <h2 className="section_title">Testimonials</h2>
 
-            <Swiper
+            <Swiper data-aos='zoom-in' data-aos-duration='1500'
                 effect={"cards"}
                 grabCursor={true}
                 modules={[EffectCards]}

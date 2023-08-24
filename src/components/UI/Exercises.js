@@ -18,12 +18,12 @@ const Exercises = () => {
 
             {/* ====     Exercises List   ==== */}
             <div className='exercise_wrapper'>
-                <div className='exercise_item'>
+                <div className='exercise_item' data-aos='zoom-in' data-aos-duration='1500'>
                     <span className='exercise_icon'>
                         <img src={lunges} alt='lunges' />
                     </span>
 
-                    <div className='exercise_content'>
+                    <div className='exercise_content' data-aos='zoom-in' data-aos-duration='1500'>
                         <h4>Healthy Life</h4>
                         <p>
                             The Lorem Ipsum pasta first appeared in a type specimen <br/> book in the 1500s as a placeholder text.
@@ -32,7 +32,7 @@ const Exercises = () => {
                 </div>
 
                 
-                <div className='exercise_item'>
+                <div className='exercise_item' data-aos='zoom-in' data-aos-duration='1500'>
                     <span className='exercise_icon'>
                         <img src={yoga} alt='lunges' />
                     </span>
@@ -46,7 +46,7 @@ const Exercises = () => {
                 </div>
 
 
-                <div className='exercise_item'>
+                <div className='exercise_item' data-aos='zoom-in' data-aos-duration='1500'>
                     <span className='exercise_icon'>
                         <img src={extended} alt='lunges' />
                     </span>

@@ -12,14 +12,14 @@ const Hero = () => {
         <div className='hero_wrapper'>
             {/* ====   Hero content    ==== */}
             <div className='hero_content'>
-                <h2 className='section_title'>Exercise is the key to <br/>
+                <h2 className='section_title' data-aos='fade-up' data-aos-duration='1500'>Exercise is the key to <br/>
                     <span className='highlights'> Healthy</span> Lifestyle
                 </h2>
-                <p>
+                <p data-aos='fade-up' data-aos-delay='100' data-aos-duration='1800'>
                     The Lorem Ipsum pasta first appeared in a type specimen <br/> book in the 1500s as a placeholder text.
                 </p>
                 {/* ====   Hero BTN    ==== */}
-                <div className='hero_btns'>
+                <div className='hero_btns' data-aos='fade-up' data-aos-delay='200' data-aos-duration='2000'>
                     <button className='register_btn'>Get Started</button>
                     <button className='watch_btn'><span><i class='ri-play-fill'></i></span>Watch Video</button>
                 </div>
@@ -37,18 +37,18 @@ const Hero = () => {
                         </div>
                     </div>
 
-                    <div className='heart_rate'>
+                    <div className='heart_rate' data-aos='fade-right' data-aos-duration='1500'>
                         <h5>Heart Rate</h5>
                         <span><i class='ri-heart-pulse-fill'></i></span>
                         <h6>2567 BPM</h6>
                     </div>
 
-                    <div className='gym_location'>
+                    <div className='gym_location' data-aos='fade-left' data-aos-duration='1500'>
                         <span><i class='ri-map-pin-2-fill'></i></span>
                         <h5>Find a new <br/> gym near you</h5>
                     </div>
 
-                    <div className='dumble_icon'>
+                    <div className='dumble_icon' data-aos='fade-down' data-aos-duration='1500'>
                         <img src={dumbleIcon} alt='dumbleIcon' />
                     </div>
 
